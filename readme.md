@@ -1,8 +1,6 @@
 ## Create interactive dashboard
 
-### problem statement
-
-GPT prompt:
+### The Prompt:
 ```text
 * Create following dataframe: It has these columns: Name, City, Country, Color, Build, Data Surface A, Data Surface B, Data Surface C, Data Surface D 
 
