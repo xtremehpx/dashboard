@@ -35,7 +35,7 @@ data_columns = ['Data Surface A', 'Data Surface B', 'Data Surface C', 'Data Surf
 def grouped_bar(column):
     grouped_data = df.groupby(['Country', 'Color'])[column].mean().reset_index()
     grouped_data = grouped_data.sort_values(by=[column], ascending=False)
-    return grouped_data.hvplot.bar(x='Country', y=column, by='Color', stacked=False, title=column, sort=False)
+    return grouped_data.hvplot.bar(x='Country', y=column, by='Color', stacked=False, title=column)
 
     ##### approach 2
     # grouped_data = df.groupby(['Country', 'Color'])[column].mean().reset_index()
